@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+
+        >
+        <EditText
+            android:id="@+id/firstPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1"
+
+            />
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/minus_button"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:layout_margin="10dp"
+            android:id="@+id/buttMinusPlayer1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/scoreOne"
+            />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/green_plus2"
+            android:id="@+id/buttPlusPlayer1"
+
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        >
+
+        <EditText
+            android:id="@+id/secondPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 2"
+            />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/minus_button"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:layout_margin="10dp"
+            android:id="@+id/buttMinusPlayer2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/score2"
+            />
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/green_plus2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/buttPlusPlayer2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <EditText
+            android:id="@+id/thirdPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 3"
+            />
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/minus_button"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:layout_margin="10dp"
+            android:id="@+id/buttMinusPlayer3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/score3"
+            />
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/green_plus2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:id="@+id/buttPlusPlayer3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp">
+
+        <EditText
+            android:id="@+id/fourthPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 4" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/minus_button"
+            android:id="@+id/buttMinusPlayer4"/>
+
+        <TextView
+            android:id="@+id/score4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#FFFFFF"
+            android:adjustViewBounds="true"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/green_plus2"
+            android:id="@+id/buttPlusPlayer4"/>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btnResults"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/results"
+
+        />
+
+</LinearLayout>
